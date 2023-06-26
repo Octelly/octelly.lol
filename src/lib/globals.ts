@@ -10,6 +10,8 @@ import accountOutline from '@iconify/icons-mdi/account-outline';
 import viewListIcon from '@iconify/icons-mdi/view-list';
 import viewListOutline from '@iconify/icons-mdi/view-list-outline';
 
+import rssBox from '@iconify/icons-mdi/rss-box';
+
 import type { Post } from '$lib/types'
 
 export const title = 'octelly.lol'
@@ -20,4 +22,5 @@ export const pages = [
     {name: 'Home', href: base || '/', activeIcon: homeIcon, inactiveIcon: homeOutline} ,
     {name: 'Posts', href: base + '/posts', activeIcon: viewListIcon, inactiveIcon: viewListOutline} ,
     {name: 'About', href: base + '/about', activeIcon: accountIcon, inactiveIcon: accountOutline} ,
+    {name: 'RSS', href: base + '/rss', activeIcon: rssBox, inactiveIcon: rssBox} ,
 ]
