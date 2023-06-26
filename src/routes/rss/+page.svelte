@@ -1,7 +1,7 @@
 <h1>blog.octelly.lol <small style="font-size:2rem;">now in <i>your</i> RSS feed</small></h1>
 
 <p>
-    Get your RSS reader spammed with the most silly and gay post you've ever seen!
+    Get your RSS reader spammed with the most silly and gay posts you've ever seen!
 </p>
 <p>
     <b><big style="color: rgb(var(--m3-scheme-primary))">FREE FOR EVERYONE!</big></b>
