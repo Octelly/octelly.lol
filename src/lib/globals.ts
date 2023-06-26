@@ -14,7 +14,7 @@ import type { Post } from '$lib/types'
 
 export const title = 'octelly.lol'
 export const description = 'Octelly\'s personal website'
-export const url = dev ? 'http://localhost:5173/' : 'https://octelly.lol'
+export const url = dev ? 'http://localhost:5173/' : 'https://blog.octelly.lol'
 
 export const pages = [
     {name: 'Home', href: base || '/', activeIcon: homeIcon, inactiveIcon: homeOutline} ,
