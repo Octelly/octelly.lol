@@ -29,7 +29,7 @@ export default {
 			strict: false
 		}),
 		prerender: {
-			entries: posts
+			entries: [...posts, '/rss.xml']
 		}
 	}
 }
