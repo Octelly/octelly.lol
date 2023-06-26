@@ -1,0 +1,44 @@
+// Copy of m3-svelte's baseStyles for reference in less code 🥴
+@import "m3-baseStyles.less";
+@import "@fontsource/noto-sans";
+
+
+* {
+    --m3-font: Noto Sans, Roboto, system-ui, sans-serif;
+    --m3-font-display: var(--m3-font);
+    --m3-font-headline: var(--m3-font);
+    --m3-font-body: var(--m3-font);
+    --m3-font-label: var(--m3-font);
+}
+
+a {
+    color: rgb(var(--m3-scheme-primary));
+    text-decoration: none;
+}
+
+h1 {
+    .m3-font-display-large;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+h2 {
+    .m3-font-headline-large
+}
+
+h3 {
+    .m3-font-headline-medium
+}
+
+h4 {
+    .m3-font-headline-small
+}
+
+p {
+    .m3-font-body-large;
+}
+
+.inline {
+    display: inline-block;
+}
