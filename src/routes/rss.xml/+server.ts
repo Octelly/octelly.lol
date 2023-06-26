@@ -16,6 +16,9 @@ export async function GET({ fetch }) {
 				<description>${globals.description}</description>
 				<link>${globals.url}</link>
 				<atom:link href="${globals.url}/rss.xml" rel="self" type="application/rss+xml"/>
+				<language>en</language>
+				<generator>SvelteKit</generator>
+				<docs>https://validator.w3.org/feed/docs/rss2.html</docs>
 				${posts
 					.map(
 						(post) => `
@@ -25,6 +28,7 @@ export async function GET({ fetch }) {
 							<link>${globals.url}/posts/${post.timestamp}</link>
 							<guid isPermaLink="true">${globals.url}/posts/${post.timestamp}</guid>
 							<pubDate>${new Date(post.timestamp * 1000).toUTCString()}</pubDate>
+							${post.tags.map((tag) => `<category>${tag}</category>`).join('')}
 						</item>
 					`
 					)
