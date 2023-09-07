@@ -14,5 +14,5 @@
 
     <code style="margin:8px; display:block;">https://blog.octelly.lol/rss.xml</code>
 
-    and you can check its validity <a href="https://validator.w3.org/check.cgi?url=https%3A//blog.octelly.lol/rss.xml">here</a>.
+    and you can check its validity <a href="https://validator.w3.org/feed/check.cgi?url=https%3A%2F%2Fblog.octelly.lol%2Frss.xml">here</a>.
 </p>
