@@ -14,13 +14,13 @@ import rssBox from '@iconify/icons-mdi/rss-box';
 
 import type { Post } from '$lib/types'
 
-export const title = 'octelly.lol'
+export const title = 'blog.octelly.lol'
 export const description = 'Octelly\'s personal website'
 export const url = dev ? 'http://localhost:5173/' : 'https://blog.octelly.lol'
 
 export const pages = [
-    {name: 'Home', href: base || '/', activeIcon: homeIcon, inactiveIcon: homeOutline} ,
-    {name: 'Posts', href: base + '/posts', activeIcon: viewListIcon, inactiveIcon: viewListOutline} ,
-    {name: 'About', href: base + '/about', activeIcon: accountIcon, inactiveIcon: accountOutline} ,
-    {name: 'RSS', href: base + '/rss', activeIcon: rssBox, inactiveIcon: rssBox} ,
+    { name: 'Home', href: base || '/', activeIcon: homeIcon, inactiveIcon: homeOutline },
+    { name: 'Posts', href: base + '/posts', activeIcon: viewListIcon, inactiveIcon: viewListOutline },
+    { name: 'About', href: base + '/about', activeIcon: accountIcon, inactiveIcon: accountOutline },
+    { name: 'RSS', href: base + '/rss', activeIcon: rssBox, inactiveIcon: rssBox },
 ]
