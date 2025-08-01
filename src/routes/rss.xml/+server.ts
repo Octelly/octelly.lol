@@ -18,10 +18,14 @@ export async function GET({ fetch }) {
 				<atom:link href="${globals.url}/rss.xml" rel="self" type="application/rss+xml"/>
 				<language>en</language>
 				<generator>SvelteKit</generator>
+				<follow_challenge>
+					<feedId>174086832009560112</feedId>
+					<userId>174086236416574464</userId>
+				</follow_challenge>
 				<docs>https://validator.w3.org/feed/docs/rss2.html</docs>
 				${posts
-					.map(
-						(post) => `
+			.map(
+				(post) => `
 						<item>
 							<title>${post.title}</title>
 							<description><![CDATA[${post.content}]]></description>
@@ -31,8 +35,8 @@ export async function GET({ fetch }) {
 							${post.tags.map((tag) => `<category>${tag}</category>`).join('')}
 						</item>
 					`
-					)
-					.join('')}
+			)
+			.join('')}
 			</channel>
 		</rss>
 	`.trim()
